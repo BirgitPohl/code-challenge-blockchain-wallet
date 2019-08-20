@@ -16,11 +16,8 @@ module.exports = function(app, miner) {
     });
 
     app.get('/print', (req, res) => {
-      return res.render('data', {
-          title: 'Data',
-          latestBlock: miner.getLatestBlock(),
-        }, console.log('Visited page: Data.'));
-  });
+      return res.download('source/pdf/billing.pdf');
+    });
 
     app.get('/data', (req, res) => {
         return res.render('data', {
