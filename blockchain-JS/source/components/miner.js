@@ -7,6 +7,7 @@ const ec = new EC('secp256k1');
 /**
  * Minacoin Transaction Manager
  * @class Miner
+ * @access public
  * @property {string} myWalletAddress
  * @property {ec.Keypair} myKey
  * @property {string} theirWalletAddress
@@ -17,7 +18,7 @@ const ec = new EC('secp256k1');
  * @method getTheirBalance
  * @method initTransactions
  */
-class Miner {
+export class Miner {
     constructor() {
         const myKey = ec.keyFromPrivate('874721b0cfd73d79c76c50d5b2ee59f7d9fe9c5743bc45c015c713903b46b7c4');
         this.myWalletAddress = myKey.getPublic('hex');
@@ -53,7 +54,7 @@ class Miner {
      * @fires sendTransaction
      * @fires Transaction.signTransaction
      * @fires minaCoin.addTransaction
-     * @returns undefined
+     * @return undefined
      */
     sendTransaction (payload) {
         if(payload === undefined || payload === '') {
@@ -66,7 +67,7 @@ class Miner {
 
     /**
      * @summary Gets the latest Block
-     * @returns Block
+     * @return Block
      */
     getLatestBlock () {
         return this.minaCoin.getLatestBlock();
@@ -74,7 +75,7 @@ class Miner {
 
     /**
      * @summary Gets user's balance
-     * @returns number
+     * @return number
      */
     getMyBalance () {
         return this.minaCoin.getBalanceOfAddress(this.myWalletAddress);
@@ -82,7 +83,7 @@ class Miner {
     
      /**
      * @summary Gets other user's balance
-     * @returns number
+     * @return number
      */
     getTheirBalance () {
         return this.minaCoin.getBalanceOfAddress(this.theirWalletAddress);
@@ -102,7 +103,7 @@ class Miner {
      * @fires getCycles
      * @fires sendTransaction
      * @fires minaCoin.minePendingTransactions
-     * @returns undefined
+     * @return undefined
      */
     initTransactions() {
         const cycles = this.getCycles();
@@ -117,5 +118,5 @@ class Miner {
     }
 }
 
-module.exports.Miner = Miner;
+//module.exports.Miner = Miner;
 

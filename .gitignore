@@ -11,3 +11,5 @@ node_modules/
 **/coverage/
 **/pdf/
 **/*.pdf
+**/docs/
+**/lib/

@@ -7,10 +7,13 @@ Check out your wallet and mine minacoins.
 ## Setup
 Run `npm install` inside the Blockchain-JS folder.
 
+## Build
+Run `npm run build` to build.
+
 ## Start
 Run `npm run start` to start.
 
-## test
+## Test
 Run `npm run test` to test.
 Run `npm run test:coverage` to test with coverage.
 

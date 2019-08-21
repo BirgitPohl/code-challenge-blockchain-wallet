@@ -1,7 +1,7 @@
 const fs = require('fs');
 const PDFDocument = require('pdfmake');
 
-class PDFMaker {
+export class PDFMaker {
     constructor(minaCoinData) {
         const fonts = {
             Roboto: {

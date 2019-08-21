@@ -5,6 +5,8 @@ node_js:
 script:
   - cd blockchain-JS
   - npm install
-  - echo Run Tests
+  - npm run build
+  - echo run test
   - npm run test:coverage
+  #- npm run esdoc
   - codecov

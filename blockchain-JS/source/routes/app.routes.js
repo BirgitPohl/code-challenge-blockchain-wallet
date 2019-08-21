@@ -1,12 +1,10 @@
 const {PDFMaker} = require('../components/pdfMaker');
 
 module.exports = function(app, miner) {
+    const minaCoinData = miner.getData();
+
     app.get('/', (req, res) => {
       console.log('Visited page: Dashboard.');
-      const minaCoinData = miner.getData();
-      const pdf = new PDFMaker(minaCoinData)
-      pdf.createPDF();
-
       let dashboardData = {
         title: 'Wallet',
         minaCoinData: minaCoinData
@@ -16,7 +14,11 @@ module.exports = function(app, miner) {
     });
 
     app.get('/print', (req, res) => {
-      return res.download('source/pdf/billing.pdf');
+      
+      const pdf = new PDFMaker(minaCoinData)
+      pdf.createPDF();
+
+      return res.download('lib/pdf/billing.pdf');
     });
 
     app.get('/data', (req, res) => {
