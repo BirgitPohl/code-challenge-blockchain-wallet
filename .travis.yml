@@ -8,5 +8,5 @@ script:
   - npm run build
   - echo run test
   - npm run test:coverage
-  #- npm run esdoc
-  - codecov
+  - npm run esdoc
+  - bash <(curl -s https://codecov.io/bash) -t $CODECOV_SECRET
