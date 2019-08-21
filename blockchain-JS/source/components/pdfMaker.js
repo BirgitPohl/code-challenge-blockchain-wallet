@@ -18,7 +18,7 @@ class PDFMaker {
     }
 
     defineDocument () {
-        // document Builder Pattern fits here
+        // TODO Document Builder Pattern fits here
         const content = {};
         content.layout = 'lightHorizontalLines';
         content.table = {};
@@ -33,7 +33,6 @@ class PDFMaker {
         ]);
 
         this.minaCoinData.latestBlock.transactions.forEach((transaction) => {
-            console.log('transaction', transaction)
             content.table.body.push([
                 transaction.amount,
                 'Transaction',
@@ -41,20 +40,16 @@ class PDFMaker {
                 ''
             ]);
         })
-            //   [ 'First', 'Second', 'Third', 'The last one' ],
-            //   [ 'Value 1', 'Value 2', 'Value 3', 'Value 4' ],
-            //   [ { text: 'Bold value', bold: true }, 'Val 2', 'Val 3', 'Val 4' ]
         this.definitions.content = [];
         this.definitions.content.push(content);
 
     }
 
     createPDF() {
-        console.warn('pdf created')
         this.defineDocument();
         const output = this.document.createPdfKitDocument(this.definitions, this.options);
         output.pipe(fs.createWriteStream(__dirname  + '/../pdf/billing.pdf'));
-        return output.end(); //finalizes document
+        return output.end(); // finalizes document
     }
 }
 
