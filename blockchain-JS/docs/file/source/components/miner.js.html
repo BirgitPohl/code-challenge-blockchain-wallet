@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">source/components/miner.js | Blockchain</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="This is the documentation of it"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Blockchain"><meta property="twitter:description" content="This is the documentation of it"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/BirgitPohl/zkSystemsCodeChallenge"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/source/components/blockchain.js~Block.html">Block</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/source/components/blockchain.js~Blockchain.html">Blockchain</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/source/components/blockchain.js~Transaction.html">Transaction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/source/components/miner.js~Miner.html">Miner</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/source/components/pdfMaker.js~PDFMaker.html">PDFMaker</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">source/components/miner.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">const fs = require(&apos;fs&apos;);
+const path = require(&apos;path&apos;);
+const {Blockchain, Transaction} = require(&apos;./blockchain&apos;);
+const EC = require(&apos;elliptic&apos;).ec;
+const ec = new EC(&apos;secp256k1&apos;);
+
+/**
+ * Minacoin Transaction Manager
+ * @example 
+ * let miner = new Miner();
+ * miner.initTransactions();
+ */
+export class Miner {
+    /**
+     * Constructor: Setting up Miner
+     */
+    constructor() {
+        const myKey = ec.keyFromPrivate(&apos;874721b0cfd73d79c76c50d5b2ee59f7d9fe9c5743bc45c015c713903b46b7c4&apos;);
+        this.myWalletAddress = myKey.getPublic(&apos;hex&apos;);
+        this.myKey = myKey;
+        const key = ec.genKeyPair().getPublic().encode(&apos;hex&apos;); // generates a random key:
+        const theirKey = ec.keyFromPrivate(key);
+        this.theirWalletAddress = theirKey.getPublic(&apos;hex&apos;);
+        this.minaCoin = new Blockchain(); 
+    }
+
+    /**
+     * Gets cycles from files in JSON format
+     * @todo Here could be a logger
+     * @return {undefined}
+     */
+    getCycles() {
+        try {
+            const folderName = &apos;../data/&apos;;
+
+            return fs.readdirSync(folderName).map(file =&gt; {
+                return require(path.resolve(folderName, file))[&apos;cycle&apos;];
+            });
+        }
+        catch (err) {
+            // TODO Here could be a logger
+            console.log(&apos;Getting cycles failed &apos; + err);
+
+            return null;
+        }
+    }
+
+    /**
+     * Sends a transaction
+     * @param {string} payload Contains a string of a cycle
+     * @return {undefined}
+     */
+    sendTransaction (payload) {
+        if(payload === undefined || payload === &apos;&apos;) {
+            throw new Error(&apos;Payload is not defined&apos;);
+        }
+        const tx1 = new Transaction(this.myWalletAddress, this.theirWalletAddress, 10, payload);
+        tx1.signTransaction(this.myKey);
+        this.minaCoin.addTransaction(tx1);
+    }
+
+    /**
+     * @summary Gets the latest Block
+     * @return {Block}
+     */
+    getLatestBlock () {
+        return this.minaCoin.getLatestBlock();
+    }
+
+    /**
+     * Gets user&apos;s balance
+     * @return {number}
+     */
+    getMyBalance () {
+        return this.minaCoin.getBalanceOfAddress(this.myWalletAddress);
+    }
+    
+     /**
+     * Gets other user&apos;s balance
+     * @return {number}
+     */
+    getTheirBalance () {
+        return this.minaCoin.getBalanceOfAddress(this.theirWalletAddress);
+    }
+
+    /** 
+     * Prepares data for view
+     * @return {Object}
+     */
+    getData() {
+        return {
+            theirBalance: this.getTheirBalance(),
+            myBalance: this.getMyBalance(),
+            latestBlock: this.getLatestBlock()
+        };
+    }
+
+    /**
+     * @summary Initiates transaction
+     * @emits getCycles
+     * @emits sendTransaction
+     * @emits minaCoin.minePendingTransactions
+     * @return {undefined}
+     */
+    initTransactions() {
+        const cycles = this.getCycles();
+
+        for (let index = 0; index &lt; cycles.length; index++) {
+            let cycle = cycles[index];
+            this.sendTransaction(cycle);
+        }
+
+        console.log(&apos;Starting the miner&apos;);
+        this.minaCoin.minePendingTransactions(this.myWalletAddress);
+    }
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

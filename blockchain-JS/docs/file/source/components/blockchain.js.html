@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">source/components/blockchain.js | Blockchain</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="This is the documentation of it"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Blockchain"><meta property="twitter:description" content="This is the documentation of it"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/BirgitPohl/zkSystemsCodeChallenge"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/source/components/blockchain.js~Block.html">Block</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/source/components/blockchain.js~Blockchain.html">Blockchain</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/source/components/blockchain.js~Transaction.html">Transaction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/source/components/miner.js~Miner.html">Miner</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/source/components/pdfMaker.js~PDFMaker.html">PDFMaker</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">source/components/blockchain.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">const SHA256 = require(&apos;crypto-js/sha256&apos;);
+const EC = require(&apos;elliptic&apos;).ec;
+const ec = new EC(&apos;secp256k1&apos;);
+
+export class Transaction {
+    constructor(fromAddress, toAddress, amount, payload) {
+        this.fromAddress = fromAddress;
+        this.toAddress = toAddress;
+        this.amount = amount;
+        this.payload = payload;
+        this.timestamp = Date.now();
+    }
+
+    calculateHash(){
+        return SHA256(this.fromAddress + this.toAddress, + this.amount + this.payload + this.timestamp).toString();
+    }
+
+    signTransaction(signingKey){
+        if(signingKey.getPublic(&apos;hex&apos;) !== this.fromAddress){
+            throw new Error(&apos;You cannot sign transactions for other wallets!&apos;);
+        }
+
+        const hashTransaction = this.calculateHash();
+        const sig = signingKey.sign(hashTransaction, &apos;base64&apos;);
+        this.signature = sig.toDER(&apos;hex&apos;);
+    }
+
+    isValid(){
+       //TODO
+        if(this.fromAddress === null) return false; 
+       
+       if(!this.signature || this.signature.length === 0){
+           throw new Error(&apos;No signature in this transaction&apos;);
+       }
+
+       const publicKey = ec.keyFromPublic(this.fromAddress, &apos;hex&apos;);
+       return publicKey.verify(this.calculateHash(), this.signature);
+    }
+}
+
+export class Block {
+    constructor(timestamp, transactions, previousHash = &apos;&apos;) {
+        this.timestamp = timestamp;
+        //TODO: change data to payload and add amount
+        this.transactions = transactions;
+        this.previousHash = previousHash;
+        this.hash = this.calculateHash();
+        this.nonce = 0;
+    }
+
+    calculateHash() {
+        return SHA256(this.index + this.timestamp + JSON.stringify(this.transactions)
+         + this.previousHash + this.nonce).toString();
+    }
+
+    mineBlock(difficulty) {
+        while(this.hash.substring(0, difficulty) !== 
+        Array(difficulty + 1).join(&apos;0&apos;)) {
+            this.nonce++;
+            this.hash = this.calculateHash();
+        }
+
+        console.log(&apos;Block mined: &apos; + this.hash);
+    }
+
+    hasValidTransactions(){
+        for (const tx of this.transactions){
+            if(!tx.isValid()){
+                return false;
+            }
+        }
+
+        return true;
+    }
+}
+
+
+export class Blockchain{
+    constructor(){
+        this.chain = [this.createGenesisBlock()];
+        this.difficulty = 2;
+        this.pendingTransactions = [];
+        this.miningReward = 100;
+    }
+
+    createGenesisBlock() {
+        return new Block(&apos;01.01.2019&apos;, &apos;Genesis block&apos;, &apos;0&apos;);
+    }
+
+    getLatestBlock() {
+        return this.chain[this.chain.length - 1];
+    }
+
+    minePendingTransactions(miningRewardAddress) {
+        const rewardTx = new Transaction(null, miningRewardAddress, this.miningReward);
+        this.pendingTransactions.push(rewardTx);
+
+        //TODO: Miners should choose which tx they want to mine
+        let block = new Block(Date.now(), this.pendingTransactions, this.getLatestBlock().hash);
+        block.mineBlock(this.difficulty);
+
+        console.log(&apos;Block successfully mined!&apos;);
+        this.chain.push(block);
+
+        this.pendingTransactions = [];
+    }
+
+    addTransaction(transaction){
+
+        if(!transaction.fromAddress || !transaction.toAddress){
+            throw new Error(&apos;Transaction must include from and to address&apos;);
+        }
+
+        if(!transaction.isValid()){
+            throw new Error(&apos;Cannot add invalid transaction to the chain!&apos;);
+        }
+
+        this.pendingTransactions.push(transaction);
+    }
+
+    getBalanceOfAddress(address){
+        let balance = 0;
+
+        for(const block of this.chain){
+            for(const trans of block.transactions){
+                if (trans.fromAddress === address){
+                    balance -= trans.amount;
+                }
+
+                if (trans.toAddress === address){
+                    balance += trans.amount;
+                }
+            }
+        }
+
+        return balance;
+    }
+
+    isChainValid() {
+        for(let i = 1; i &lt; this.chain.length; i++) {
+            const currentBlock = this.chain[i];
+            const previousBlock = this.chain[i - 1];
+
+            if(!currentBlock.hasValidtransactions){
+                return false;
+            }
+
+            if(currentBlock.hash !== currentBlock.calculateHash()) {
+                return false; 
+            }
+
+            if(currentBlock.previousHash !== previousBlock.hash){
+                return false;
+            }
+        }
+
+        return true;
+    }
+}</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

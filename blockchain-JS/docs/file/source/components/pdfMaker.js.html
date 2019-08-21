@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">source/components/pdfMaker.js | Blockchain</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="This is the documentation of it"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Blockchain"><meta property="twitter:description" content="This is the documentation of it"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/BirgitPohl/zkSystemsCodeChallenge"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/source/components/blockchain.js~Block.html">Block</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/source/components/blockchain.js~Blockchain.html">Blockchain</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/source/components/blockchain.js~Transaction.html">Transaction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/source/components/miner.js~Miner.html">Miner</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/source/components/pdfMaker.js~PDFMaker.html">PDFMaker</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">source/components/pdfMaker.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">const fs = require(&apos;fs&apos;);
+const PDFDocument = require(&apos;pdfmake&apos;);
+
+/**
+ * Creates PDF with dynamic data
+ * @example 
+ * let pdfMaker = new PDFMaker(minaCoinData);
+ * pdfMaker.createPDF();
+ */
+export class PDFMaker {
+    /**
+     * @param {Object} minaCoinData
+    */
+    constructor(minaCoinData) {
+        const fonts = {
+            Roboto: {
+                normal: __dirname  + &apos;/../fonts/Roboto-Regular.ttf&apos;,
+                bold: __dirname  + &apos;/../fonts/Roboto-Medium.ttf&apos;,
+                italics: __dirname  + &apos;/../fonts/Roboto-RegularItalic.ttf&apos;,
+                bolditalics: __dirname  + &apos;/../fonts/Roboto-MediumItalic.ttf&apos;,
+            }
+        };
+        this.minaCoinData = minaCoinData;
+        this.document = new PDFDocument(fonts);
+        this.definitions = {};
+        this.options = {};
+    }
+
+    /**
+     * Creates the table and styling for the PDF
+     * @todo Document Builder Pattern fits here
+     * @return {undefined}
+     */
+    defineDocument () {
+        // TODO Document Builder Pattern fits here
+        const content = {};
+        content.layout = &apos;lightHorizontalLines&apos;;
+        content.table = {};
+        content.table.headerRows = 1;
+        content.table.width = [ &apos;*&apos;, &apos;*&apos;, 100, &apos;*&apos; ];
+        content.table.body = [];
+        content.table.body.push([
+            { text: &apos;Quantity&apos;, bold: true },
+            { text: &apos;Description&apos;, bold: true },
+            { text: &apos;Unit Price&apos;, bold: true },
+            { text: &apos;Total&apos;, bold: true }
+        ]);
+
+        this.minaCoinData.latestBlock.transactions.forEach((transaction) =&gt; {
+            content.table.body.push([
+                transaction.amount,
+                &apos;Transaction&apos;,
+                transaction.amount,
+                &apos;&apos;
+            ]);
+        })
+        this.definitions.content = [];
+        this.definitions.content.push(content);
+    }
+
+    /**
+     * Creates the document
+     * @return {any}
+     */
+    createPDF() {
+        this.defineDocument();
+        const output = this.document.createPdfKitDocument(this.definitions, this.options);
+        output.pipe(fs.createWriteStream(__dirname  + &apos;/../pdf/billing.pdf&apos;));
+        return output.end(); // finalizes document
+    }
+}</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

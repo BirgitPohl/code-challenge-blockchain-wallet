@@ -1,0 +1,83 @@
+{
+  "coverage": "21.21%",
+  "expectCount": 66,
+  "actualCount": 14,
+  "files": {
+    "source/components/blockchain.js": {
+      "expectCount": 36,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        14,
+        18,
+        25,
+        28,
+        41,
+        42,
+        43,
+        45,
+        46,
+        47,
+        48,
+        51,
+        56,
+        66,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        86,
+        90,
+        94,
+        108,
+        121,
+        139
+      ]
+    },
+    "source/components/miner.js": {
+      "expectCount": 18,
+      "actualCount": 9,
+      "undocumentLines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        19,
+        20,
+        23,
+        24
+      ]
+    },
+    "source/components/pdfMaker.js": {
+      "expectCount": 10,
+      "actualCount": 4,
+      "undocumentLines": [
+        1,
+        2,
+        23,
+        24,
+        25,
+        26
+      ]
+    },
+    "source/routes/app.routes.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        1
+      ]
+    }
+  }
+}

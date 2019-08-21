@@ -1,0 +1,2029 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "source/components/blockchain.js",
+    "content": "const SHA256 = require('crypto-js/sha256');\nconst EC = require('elliptic').ec;\nconst ec = new EC('secp256k1');\n\nexport class Transaction {\n    constructor(fromAddress, toAddress, amount, payload) {\n        this.fromAddress = fromAddress;\n        this.toAddress = toAddress;\n        this.amount = amount;\n        this.payload = payload;\n        this.timestamp = Date.now();\n    }\n\n    calculateHash(){\n        return SHA256(this.fromAddress + this.toAddress, + this.amount + this.payload + this.timestamp).toString();\n    }\n\n    signTransaction(signingKey){\n        if(signingKey.getPublic('hex') !== this.fromAddress){\n            throw new Error('You cannot sign transactions for other wallets!');\n        }\n\n        const hashTransaction = this.calculateHash();\n        const sig = signingKey.sign(hashTransaction, 'base64');\n        this.signature = sig.toDER('hex');\n    }\n\n    isValid(){\n       //TODO\n        if(this.fromAddress === null) return false; \n       \n       if(!this.signature || this.signature.length === 0){\n           throw new Error('No signature in this transaction');\n       }\n\n       const publicKey = ec.keyFromPublic(this.fromAddress, 'hex');\n       return publicKey.verify(this.calculateHash(), this.signature);\n    }\n}\n\nexport class Block {\n    constructor(timestamp, transactions, previousHash = '') {\n        this.timestamp = timestamp;\n        //TODO: change data to payload and add amount\n        this.transactions = transactions;\n        this.previousHash = previousHash;\n        this.hash = this.calculateHash();\n        this.nonce = 0;\n    }\n\n    calculateHash() {\n        return SHA256(this.index + this.timestamp + JSON.stringify(this.transactions)\n         + this.previousHash + this.nonce).toString();\n    }\n\n    mineBlock(difficulty) {\n        while(this.hash.substring(0, difficulty) !== \n        Array(difficulty + 1).join('0')) {\n            this.nonce++;\n            this.hash = this.calculateHash();\n        }\n\n        console.log('Block mined: ' + this.hash);\n    }\n\n    hasValidTransactions(){\n        for (const tx of this.transactions){\n            if(!tx.isValid()){\n                return false;\n            }\n        }\n\n        return true;\n    }\n}\n\n\nexport class Blockchain{\n    constructor(){\n        this.chain = [this.createGenesisBlock()];\n        this.difficulty = 2;\n        this.pendingTransactions = [];\n        this.miningReward = 100;\n    }\n\n    createGenesisBlock() {\n        return new Block('01.01.2019', 'Genesis block', '0');\n    }\n\n    getLatestBlock() {\n        return this.chain[this.chain.length - 1];\n    }\n\n    minePendingTransactions(miningRewardAddress) {\n        const rewardTx = new Transaction(null, miningRewardAddress, this.miningReward);\n        this.pendingTransactions.push(rewardTx);\n\n        //TODO: Miners should choose which tx they want to mine\n        let block = new Block(Date.now(), this.pendingTransactions, this.getLatestBlock().hash);\n        block.mineBlock(this.difficulty);\n\n        console.log('Block successfully mined!');\n        this.chain.push(block);\n\n        this.pendingTransactions = [];\n    }\n\n    addTransaction(transaction){\n\n        if(!transaction.fromAddress || !transaction.toAddress){\n            throw new Error('Transaction must include from and to address');\n        }\n\n        if(!transaction.isValid()){\n            throw new Error('Cannot add invalid transaction to the chain!');\n        }\n\n        this.pendingTransactions.push(transaction);\n    }\n\n    getBalanceOfAddress(address){\n        let balance = 0;\n\n        for(const block of this.chain){\n            for(const trans of block.transactions){\n                if (trans.fromAddress === address){\n                    balance -= trans.amount;\n                }\n\n                if (trans.toAddress === address){\n                    balance += trans.amount;\n                }\n            }\n        }\n\n        return balance;\n    }\n\n    isChainValid() {\n        for(let i = 1; i < this.chain.length; i++) {\n            const currentBlock = this.chain[i];\n            const previousBlock = this.chain[i - 1];\n\n            if(!currentBlock.hasValidtransactions){\n                return false;\n            }\n\n            if(currentBlock.hash !== currentBlock.calculateHash()) {\n                return false; \n            }\n\n            if(currentBlock.previousHash !== previousBlock.hash){\n                return false;\n            }\n        }\n\n        return true;\n    }\n}",
+    "static": true,
+    "longname": "/Users/birgitpohl1/Documents/ZKsystems/zkSystemsCodeChallenge/blockchain-JS/source/components/blockchain.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "variable",
+    "name": "SHA256",
+    "memberof": "source/components/blockchain.js",
+    "static": true,
+    "longname": "source/components/blockchain.js~SHA256",
+    "access": "public",
+    "export": false,
+    "importPath": "code-challenge/source/components/blockchain.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "variable",
+    "name": "EC",
+    "memberof": "source/components/blockchain.js",
+    "static": true,
+    "longname": "source/components/blockchain.js~EC",
+    "access": "public",
+    "export": false,
+    "importPath": "code-challenge/source/components/blockchain.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 51,
+    "kind": "variable",
+    "name": "ec",
+    "memberof": "source/components/blockchain.js",
+    "static": true,
+    "longname": "source/components/blockchain.js~ec",
+    "access": "public",
+    "export": false,
+    "importPath": "code-challenge/source/components/blockchain.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "class",
+    "name": "Transaction",
+    "memberof": "source/components/blockchain.js",
+    "static": true,
+    "longname": "source/components/blockchain.js~Transaction",
+    "access": "public",
+    "export": true,
+    "importPath": "code-challenge/source/components/blockchain.js",
+    "importStyle": "{Transaction}",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 53,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "source/components/blockchain.js~Transaction",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/blockchain.js~Transaction#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true
+  },
+  {
+    "__docId__": 54,
+    "kind": "member",
+    "name": "fromAddress",
+    "memberof": "source/components/blockchain.js~Transaction",
+    "static": false,
+    "longname": "source/components/blockchain.js~Transaction#fromAddress",
+    "access": "public",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "member",
+    "name": "toAddress",
+    "memberof": "source/components/blockchain.js~Transaction",
+    "static": false,
+    "longname": "source/components/blockchain.js~Transaction#toAddress",
+    "access": "public",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "member",
+    "name": "amount",
+    "memberof": "source/components/blockchain.js~Transaction",
+    "static": false,
+    "longname": "source/components/blockchain.js~Transaction#amount",
+    "access": "public",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 57,
+    "kind": "member",
+    "name": "payload",
+    "memberof": "source/components/blockchain.js~Transaction",
+    "static": false,
+    "longname": "source/components/blockchain.js~Transaction#payload",
+    "access": "public",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "member",
+    "name": "timestamp",
+    "memberof": "source/components/blockchain.js~Transaction",
+    "static": false,
+    "longname": "source/components/blockchain.js~Transaction#timestamp",
+    "access": "public",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 59,
+    "kind": "method",
+    "name": "calculateHash",
+    "memberof": "source/components/blockchain.js~Transaction",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/blockchain.js~Transaction#calculateHash",
+    "access": "public",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 60,
+    "kind": "method",
+    "name": "signTransaction",
+    "memberof": "source/components/blockchain.js~Transaction",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/blockchain.js~Transaction#signTransaction",
+    "access": "public",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "params": [
+      {
+        "name": "signingKey",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 61,
+    "kind": "member",
+    "name": "signature",
+    "memberof": "source/components/blockchain.js~Transaction",
+    "static": false,
+    "longname": "source/components/blockchain.js~Transaction#signature",
+    "access": "public",
+    "description": null,
+    "lineNumber": 25,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 62,
+    "kind": "method",
+    "name": "isValid",
+    "memberof": "source/components/blockchain.js~Transaction",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/blockchain.js~Transaction#isValid",
+    "access": "public",
+    "description": null,
+    "lineNumber": 28,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 63,
+    "kind": "class",
+    "name": "Block",
+    "memberof": "source/components/blockchain.js",
+    "static": true,
+    "longname": "source/components/blockchain.js~Block",
+    "access": "public",
+    "export": true,
+    "importPath": "code-challenge/source/components/blockchain.js",
+    "importStyle": "{Block}",
+    "description": null,
+    "lineNumber": 41,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 64,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "source/components/blockchain.js~Block",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/blockchain.js~Block#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 42,
+    "undocument": true
+  },
+  {
+    "__docId__": 65,
+    "kind": "member",
+    "name": "timestamp",
+    "memberof": "source/components/blockchain.js~Block",
+    "static": false,
+    "longname": "source/components/blockchain.js~Block#timestamp",
+    "access": "public",
+    "description": null,
+    "lineNumber": 43,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 66,
+    "kind": "member",
+    "name": "transactions",
+    "memberof": "source/components/blockchain.js~Block",
+    "static": false,
+    "longname": "source/components/blockchain.js~Block#transactions",
+    "access": "public",
+    "description": null,
+    "lineNumber": 45,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 67,
+    "kind": "member",
+    "name": "previousHash",
+    "memberof": "source/components/blockchain.js~Block",
+    "static": false,
+    "longname": "source/components/blockchain.js~Block#previousHash",
+    "access": "public",
+    "description": null,
+    "lineNumber": 46,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 68,
+    "kind": "member",
+    "name": "hash",
+    "memberof": "source/components/blockchain.js~Block",
+    "static": false,
+    "longname": "source/components/blockchain.js~Block#hash",
+    "access": "public",
+    "description": null,
+    "lineNumber": 47,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 69,
+    "kind": "member",
+    "name": "nonce",
+    "memberof": "source/components/blockchain.js~Block",
+    "static": false,
+    "longname": "source/components/blockchain.js~Block#nonce",
+    "access": "public",
+    "description": null,
+    "lineNumber": 48,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "__docId__": 70,
+    "kind": "method",
+    "name": "calculateHash",
+    "memberof": "source/components/blockchain.js~Block",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/blockchain.js~Block#calculateHash",
+    "access": "public",
+    "description": null,
+    "lineNumber": 51,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 71,
+    "kind": "method",
+    "name": "mineBlock",
+    "memberof": "source/components/blockchain.js~Block",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/blockchain.js~Block#mineBlock",
+    "access": "public",
+    "description": null,
+    "lineNumber": 56,
+    "undocument": true,
+    "params": [
+      {
+        "name": "difficulty",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 73,
+    "kind": "method",
+    "name": "hasValidTransactions",
+    "memberof": "source/components/blockchain.js~Block",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/blockchain.js~Block#hasValidTransactions",
+    "access": "public",
+    "description": null,
+    "lineNumber": 66,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 74,
+    "kind": "class",
+    "name": "Blockchain",
+    "memberof": "source/components/blockchain.js",
+    "static": true,
+    "longname": "source/components/blockchain.js~Blockchain",
+    "access": "public",
+    "export": true,
+    "importPath": "code-challenge/source/components/blockchain.js",
+    "importStyle": "{Blockchain}",
+    "description": null,
+    "lineNumber": 78,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 75,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "source/components/blockchain.js~Blockchain",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/blockchain.js~Blockchain#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 79,
+    "undocument": true
+  },
+  {
+    "__docId__": 76,
+    "kind": "member",
+    "name": "chain",
+    "memberof": "source/components/blockchain.js~Blockchain",
+    "static": false,
+    "longname": "source/components/blockchain.js~Blockchain#chain",
+    "access": "public",
+    "description": null,
+    "lineNumber": 80,
+    "undocument": true,
+    "type": {
+      "types": [
+        "undefined[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 77,
+    "kind": "member",
+    "name": "difficulty",
+    "memberof": "source/components/blockchain.js~Blockchain",
+    "static": false,
+    "longname": "source/components/blockchain.js~Blockchain#difficulty",
+    "access": "public",
+    "description": null,
+    "lineNumber": 81,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "__docId__": 78,
+    "kind": "member",
+    "name": "pendingTransactions",
+    "memberof": "source/components/blockchain.js~Blockchain",
+    "static": false,
+    "longname": "source/components/blockchain.js~Blockchain#pendingTransactions",
+    "access": "public",
+    "description": null,
+    "lineNumber": 82,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 79,
+    "kind": "member",
+    "name": "miningReward",
+    "memberof": "source/components/blockchain.js~Blockchain",
+    "static": false,
+    "longname": "source/components/blockchain.js~Blockchain#miningReward",
+    "access": "public",
+    "description": null,
+    "lineNumber": 83,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "__docId__": 80,
+    "kind": "method",
+    "name": "createGenesisBlock",
+    "memberof": "source/components/blockchain.js~Blockchain",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/blockchain.js~Blockchain#createGenesisBlock",
+    "access": "public",
+    "description": null,
+    "lineNumber": 86,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 81,
+    "kind": "method",
+    "name": "getLatestBlock",
+    "memberof": "source/components/blockchain.js~Blockchain",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/blockchain.js~Blockchain#getLatestBlock",
+    "access": "public",
+    "description": null,
+    "lineNumber": 90,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 82,
+    "kind": "method",
+    "name": "minePendingTransactions",
+    "memberof": "source/components/blockchain.js~Blockchain",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/blockchain.js~Blockchain#minePendingTransactions",
+    "access": "public",
+    "description": null,
+    "lineNumber": 94,
+    "undocument": true,
+    "params": [
+      {
+        "name": "miningRewardAddress",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 84,
+    "kind": "method",
+    "name": "addTransaction",
+    "memberof": "source/components/blockchain.js~Blockchain",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/blockchain.js~Blockchain#addTransaction",
+    "access": "public",
+    "description": null,
+    "lineNumber": 108,
+    "undocument": true,
+    "params": [
+      {
+        "name": "transaction",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 85,
+    "kind": "method",
+    "name": "getBalanceOfAddress",
+    "memberof": "source/components/blockchain.js~Blockchain",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/blockchain.js~Blockchain#getBalanceOfAddress",
+    "access": "public",
+    "description": null,
+    "lineNumber": 121,
+    "undocument": true,
+    "params": [
+      {
+        "name": "address",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 86,
+    "kind": "method",
+    "name": "isChainValid",
+    "memberof": "source/components/blockchain.js~Blockchain",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/blockchain.js~Blockchain#isChainValid",
+    "access": "public",
+    "description": null,
+    "lineNumber": 139,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 87,
+    "kind": "file",
+    "name": "source/components/miner.js",
+    "content": "const fs = require('fs');\nconst path = require('path');\nconst {Blockchain, Transaction} = require('./blockchain');\nconst EC = require('elliptic').ec;\nconst ec = new EC('secp256k1');\n\n/**\n * Minacoin Transaction Manager\n * @example \n * let miner = new Miner();\n * miner.initTransactions();\n */\nexport class Miner {\n    /**\n     * Constructor: Setting up Miner\n     */\n    constructor() {\n        const myKey = ec.keyFromPrivate('874721b0cfd73d79c76c50d5b2ee59f7d9fe9c5743bc45c015c713903b46b7c4');\n        this.myWalletAddress = myKey.getPublic('hex');\n        this.myKey = myKey;\n        const key = ec.genKeyPair().getPublic().encode('hex'); // generates a random key:\n        const theirKey = ec.keyFromPrivate(key);\n        this.theirWalletAddress = theirKey.getPublic('hex');\n        this.minaCoin = new Blockchain(); \n    }\n\n    /**\n     * Gets cycles from files in JSON format\n     * @todo Here could be a logger\n     * @return {undefined}\n     */\n    getCycles() {\n        try {\n            const folderName = '../data/';\n\n            return fs.readdirSync(folderName).map(file => {\n                return require(path.resolve(folderName, file))['cycle'];\n            });\n        }\n        catch (err) {\n            // TODO Here could be a logger\n            console.log('Getting cycles failed ' + err);\n\n            return null;\n        }\n    }\n\n    /**\n     * Sends a transaction\n     * @param {string} payload Contains a string of a cycle\n     * @return {undefined}\n     */\n    sendTransaction (payload) {\n        if(payload === undefined || payload === '') {\n            throw new Error('Payload is not defined');\n        }\n        const tx1 = new Transaction(this.myWalletAddress, this.theirWalletAddress, 10, payload);\n        tx1.signTransaction(this.myKey);\n        this.minaCoin.addTransaction(tx1);\n    }\n\n    /**\n     * @summary Gets the latest Block\n     * @return {Block}\n     */\n    getLatestBlock () {\n        return this.minaCoin.getLatestBlock();\n    }\n\n    /**\n     * Gets user's balance\n     * @return {number}\n     */\n    getMyBalance () {\n        return this.minaCoin.getBalanceOfAddress(this.myWalletAddress);\n    }\n    \n     /**\n     * Gets other user's balance\n     * @return {number}\n     */\n    getTheirBalance () {\n        return this.minaCoin.getBalanceOfAddress(this.theirWalletAddress);\n    }\n\n    /** \n     * Prepares data for view\n     * @return {Object}\n     */\n    getData() {\n        return {\n            theirBalance: this.getTheirBalance(),\n            myBalance: this.getMyBalance(),\n            latestBlock: this.getLatestBlock()\n        };\n    }\n\n    /**\n     * @summary Initiates transaction\n     * @emits getCycles\n     * @emits sendTransaction\n     * @emits minaCoin.minePendingTransactions\n     * @return {undefined}\n     */\n    initTransactions() {\n        const cycles = this.getCycles();\n\n        for (let index = 0; index < cycles.length; index++) {\n            let cycle = cycles[index];\n            this.sendTransaction(cycle);\n        }\n\n        console.log('Starting the miner');\n        this.minaCoin.minePendingTransactions(this.myWalletAddress);\n    }\n}\n",
+    "static": true,
+    "longname": "/Users/birgitpohl1/Documents/ZKsystems/zkSystemsCodeChallenge/blockchain-JS/source/components/miner.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 88,
+    "kind": "variable",
+    "name": "fs",
+    "memberof": "source/components/miner.js",
+    "static": true,
+    "longname": "source/components/miner.js~fs",
+    "access": "public",
+    "export": false,
+    "importPath": "code-challenge/source/components/miner.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 89,
+    "kind": "variable",
+    "name": "path",
+    "memberof": "source/components/miner.js",
+    "static": true,
+    "longname": "source/components/miner.js~path",
+    "access": "public",
+    "export": false,
+    "importPath": "code-challenge/source/components/miner.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 90,
+    "kind": "variable",
+    "name": "Blockchain",
+    "memberof": "source/components/miner.js",
+    "static": true,
+    "longname": "source/components/miner.js~Blockchain",
+    "access": "public",
+    "export": false,
+    "importPath": "code-challenge/source/components/miner.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 91,
+    "kind": "variable",
+    "name": "EC",
+    "memberof": "source/components/miner.js",
+    "static": true,
+    "longname": "source/components/miner.js~EC",
+    "access": "public",
+    "export": false,
+    "importPath": "code-challenge/source/components/miner.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 92,
+    "kind": "variable",
+    "name": "ec",
+    "memberof": "source/components/miner.js",
+    "static": true,
+    "longname": "source/components/miner.js~ec",
+    "access": "public",
+    "export": false,
+    "importPath": "code-challenge/source/components/miner.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 93,
+    "kind": "class",
+    "name": "Miner",
+    "memberof": "source/components/miner.js",
+    "static": true,
+    "longname": "source/components/miner.js~Miner",
+    "access": "public",
+    "export": true,
+    "importPath": "code-challenge/source/components/miner.js",
+    "importStyle": "{Miner}",
+    "description": "Minacoin Transaction Manager",
+    "examples": [
+      "let miner = new Miner();\nminer.initTransactions();"
+    ],
+    "lineNumber": 13,
+    "interface": false
+  },
+  {
+    "__docId__": 94,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "source/components/miner.js~Miner",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/miner.js~Miner#constructor",
+    "access": "public",
+    "description": "Constructor: Setting up Miner",
+    "lineNumber": 17
+  },
+  {
+    "__docId__": 95,
+    "kind": "member",
+    "name": "myWalletAddress",
+    "memberof": "source/components/miner.js~Miner",
+    "static": false,
+    "longname": "source/components/miner.js~Miner#myWalletAddress",
+    "access": "public",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 96,
+    "kind": "member",
+    "name": "myKey",
+    "memberof": "source/components/miner.js~Miner",
+    "static": false,
+    "longname": "source/components/miner.js~Miner#myKey",
+    "access": "public",
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 97,
+    "kind": "member",
+    "name": "theirWalletAddress",
+    "memberof": "source/components/miner.js~Miner",
+    "static": false,
+    "longname": "source/components/miner.js~Miner#theirWalletAddress",
+    "access": "public",
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 98,
+    "kind": "member",
+    "name": "minaCoin",
+    "memberof": "source/components/miner.js~Miner",
+    "static": false,
+    "longname": "source/components/miner.js~Miner#minaCoin",
+    "access": "public",
+    "description": null,
+    "lineNumber": 24,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 99,
+    "kind": "method",
+    "name": "getCycles",
+    "memberof": "source/components/miner.js~Miner",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/miner.js~Miner#getCycles",
+    "access": "public",
+    "description": "Gets cycles from files in JSON format",
+    "lineNumber": 32,
+    "todo": [
+      "Here could be a logger"
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "undefined"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 100,
+    "kind": "method",
+    "name": "sendTransaction",
+    "memberof": "source/components/miner.js~Miner",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/miner.js~Miner#sendTransaction",
+    "access": "public",
+    "description": "Sends a transaction",
+    "lineNumber": 53,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "payload",
+        "description": "Contains a string of a cycle"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "undefined"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 101,
+    "kind": "method",
+    "name": "getLatestBlock",
+    "memberof": "source/components/miner.js~Miner",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/miner.js~Miner#getLatestBlock",
+    "access": "public",
+    "description": "",
+    "lineNumber": 66,
+    "unknown": [
+      {
+        "tagName": "@summary",
+        "tagValue": "Gets the latest Block"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Block"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 102,
+    "kind": "method",
+    "name": "getMyBalance",
+    "memberof": "source/components/miner.js~Miner",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/miner.js~Miner#getMyBalance",
+    "access": "public",
+    "description": "Gets user's balance",
+    "lineNumber": 74,
+    "return": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 103,
+    "kind": "method",
+    "name": "getTheirBalance",
+    "memberof": "source/components/miner.js~Miner",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/miner.js~Miner#getTheirBalance",
+    "access": "public",
+    "description": "Gets other user's balance",
+    "lineNumber": 82,
+    "return": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 104,
+    "kind": "method",
+    "name": "getData",
+    "memberof": "source/components/miner.js~Miner",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/miner.js~Miner#getData",
+    "access": "public",
+    "description": "Prepares data for view",
+    "lineNumber": 90,
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 105,
+    "kind": "method",
+    "name": "initTransactions",
+    "memberof": "source/components/miner.js~Miner",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/miner.js~Miner#initTransactions",
+    "access": "public",
+    "description": "",
+    "lineNumber": 105,
+    "unknown": [
+      {
+        "tagName": "@summary",
+        "tagValue": "Initiates transaction"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "undefined"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "emits": [
+      {
+        "types": [
+          "*"
+        ],
+        "description": "getCycles"
+      },
+      {
+        "types": [
+          "*"
+        ],
+        "description": "sendTransaction"
+      },
+      {
+        "types": [
+          "*"
+        ],
+        "description": "minaCoin.minePendingTransactions"
+      }
+    ],
+    "params": []
+  },
+  {
+    "__docId__": 106,
+    "kind": "file",
+    "name": "source/components/pdfMaker.js",
+    "content": "const fs = require('fs');\nconst PDFDocument = require('pdfmake');\n\n/**\n * Creates PDF with dynamic data\n * @example \n * let pdfMaker = new PDFMaker(minaCoinData);\n * pdfMaker.createPDF();\n */\nexport class PDFMaker {\n    /**\n     * @param {Object} minaCoinData\n    */\n    constructor(minaCoinData) {\n        const fonts = {\n            Roboto: {\n                normal: __dirname  + '/../fonts/Roboto-Regular.ttf',\n                bold: __dirname  + '/../fonts/Roboto-Medium.ttf',\n                italics: __dirname  + '/../fonts/Roboto-RegularItalic.ttf',\n                bolditalics: __dirname  + '/../fonts/Roboto-MediumItalic.ttf',\n            }\n        };\n        this.minaCoinData = minaCoinData;\n        this.document = new PDFDocument(fonts);\n        this.definitions = {};\n        this.options = {};\n    }\n\n    /**\n     * Creates the table and styling for the PDF\n     * @todo Document Builder Pattern fits here\n     * @return {undefined}\n     */\n    defineDocument () {\n        // TODO Document Builder Pattern fits here\n        const content = {};\n        content.layout = 'lightHorizontalLines';\n        content.table = {};\n        content.table.headerRows = 1;\n        content.table.width = [ '*', '*', 100, '*' ];\n        content.table.body = [];\n        content.table.body.push([\n            { text: 'Quantity', bold: true },\n            { text: 'Description', bold: true },\n            { text: 'Unit Price', bold: true },\n            { text: 'Total', bold: true }\n        ]);\n\n        this.minaCoinData.latestBlock.transactions.forEach((transaction) => {\n            content.table.body.push([\n                transaction.amount,\n                'Transaction',\n                transaction.amount,\n                ''\n            ]);\n        })\n        this.definitions.content = [];\n        this.definitions.content.push(content);\n    }\n\n    /**\n     * Creates the document\n     * @return {any}\n     */\n    createPDF() {\n        this.defineDocument();\n        const output = this.document.createPdfKitDocument(this.definitions, this.options);\n        output.pipe(fs.createWriteStream(__dirname  + '/../pdf/billing.pdf'));\n        return output.end(); // finalizes document\n    }\n}",
+    "static": true,
+    "longname": "/Users/birgitpohl1/Documents/ZKsystems/zkSystemsCodeChallenge/blockchain-JS/source/components/pdfMaker.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 107,
+    "kind": "variable",
+    "name": "fs",
+    "memberof": "source/components/pdfMaker.js",
+    "static": true,
+    "longname": "source/components/pdfMaker.js~fs",
+    "access": "public",
+    "export": false,
+    "importPath": "code-challenge/source/components/pdfMaker.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 108,
+    "kind": "variable",
+    "name": "PDFDocument",
+    "memberof": "source/components/pdfMaker.js",
+    "static": true,
+    "longname": "source/components/pdfMaker.js~PDFDocument",
+    "access": "public",
+    "export": false,
+    "importPath": "code-challenge/source/components/pdfMaker.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 109,
+    "kind": "class",
+    "name": "PDFMaker",
+    "memberof": "source/components/pdfMaker.js",
+    "static": true,
+    "longname": "source/components/pdfMaker.js~PDFMaker",
+    "access": "public",
+    "export": true,
+    "importPath": "code-challenge/source/components/pdfMaker.js",
+    "importStyle": "{PDFMaker}",
+    "description": "Creates PDF with dynamic data",
+    "examples": [
+      "let pdfMaker = new PDFMaker(minaCoinData);\npdfMaker.createPDF();"
+    ],
+    "lineNumber": 10,
+    "interface": false
+  },
+  {
+    "__docId__": 110,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "source/components/pdfMaker.js~PDFMaker",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/pdfMaker.js~PDFMaker#constructor",
+    "access": "public",
+    "description": "",
+    "lineNumber": 14,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "minaCoinData",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 111,
+    "kind": "member",
+    "name": "minaCoinData",
+    "memberof": "source/components/pdfMaker.js~PDFMaker",
+    "static": false,
+    "longname": "source/components/pdfMaker.js~PDFMaker#minaCoinData",
+    "access": "public",
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 112,
+    "kind": "member",
+    "name": "document",
+    "memberof": "source/components/pdfMaker.js~PDFMaker",
+    "static": false,
+    "longname": "source/components/pdfMaker.js~PDFMaker#document",
+    "access": "public",
+    "description": null,
+    "lineNumber": 24,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 113,
+    "kind": "member",
+    "name": "definitions",
+    "memberof": "source/components/pdfMaker.js~PDFMaker",
+    "static": false,
+    "longname": "source/components/pdfMaker.js~PDFMaker#definitions",
+    "access": "public",
+    "description": null,
+    "lineNumber": 25,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    }
+  },
+  {
+    "__docId__": 114,
+    "kind": "member",
+    "name": "options",
+    "memberof": "source/components/pdfMaker.js~PDFMaker",
+    "static": false,
+    "longname": "source/components/pdfMaker.js~PDFMaker#options",
+    "access": "public",
+    "description": null,
+    "lineNumber": 26,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    }
+  },
+  {
+    "__docId__": 115,
+    "kind": "method",
+    "name": "defineDocument",
+    "memberof": "source/components/pdfMaker.js~PDFMaker",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/pdfMaker.js~PDFMaker#defineDocument",
+    "access": "public",
+    "description": "Creates the table and styling for the PDF",
+    "lineNumber": 34,
+    "todo": [
+      "Document Builder Pattern fits here"
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "undefined"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 116,
+    "kind": "method",
+    "name": "createPDF",
+    "memberof": "source/components/pdfMaker.js~PDFMaker",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/pdfMaker.js~PDFMaker#createPDF",
+    "access": "public",
+    "description": "Creates the document",
+    "lineNumber": 65,
+    "return": {
+      "nullable": null,
+      "types": [
+        "any"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 117,
+    "kind": "file",
+    "name": "source/routes/app.routes.js",
+    "content": "const {PDFMaker} = require('../components/pdfMaker');\n\n/**\n * Defines some routes\n */\nmodule.exports = function(app, miner) {\n    const minaCoinData = miner.getData();\n\n    /**\n     * Request for index\n     * @param {any} res Response\n     * @param {any} req Request\n     * @return {any} Renders Dashboard view\n     */\n    app.get('/', (req, res) => {\n      console.log('Visited page: Dashboard.');\n      let dashboardData = {\n        title: 'Wallet',\n        minaCoinData: minaCoinData\n      };\n\n      return res.render('dashboard', dashboardData);\n    });\n\n    /**\n     * Request for Billing PDF\n     * @param {any} res Response\n     * @param {any} req Request\n     * @return {any} Downloads billing.pdf\n     */\n    app.get('/print', (req, res) => {\n      const pdf = new PDFMaker(minaCoinData)\n      pdf.createPDF();\n\n      return res.download('lib/pdf/billing.pdf');\n    });\n\n    /**\n     * Request for /data, A more detailed view\n     * @param {any} res Response\n     * @param {any} req Request\n     * @return {any} Renders Dashboard view\n     */\n    app.get('/data', (req, res) => {\n        return res.render('data', {\n            title: 'Data',\n            minaCoinData: miner.getData()\n          }, console.log('Visited page: Data.'));\n    });\n\n    /**\n     * Request for /mine. How much can you mine?\n     * @param {any} res Response\n     * @param {any} req Request\n     * @return {any} Renders Mining view\n     */\n    app.get('/mine', (req, res) => {\n      miner.initTransactions();\n\n      let dashboardData = {\n        title: 'Dashboard',\n        minaCoinData: miner.getData()\n      };\n\n      return res.render('dashboard', dashboardData);\n    });\n};",
+    "static": true,
+    "longname": "/Users/birgitpohl1/Documents/ZKsystems/zkSystemsCodeChallenge/blockchain-JS/source/routes/app.routes.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 118,
+    "kind": "variable",
+    "name": "PDFMaker",
+    "memberof": "source/routes/app.routes.js",
+    "static": true,
+    "longname": "source/routes/app.routes.js~PDFMaker",
+    "access": "public",
+    "export": false,
+    "importPath": "code-challenge/source/routes/app.routes.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 119,
+    "kind": "function",
+    "name": "exports",
+    "memberof": "source/routes/app.routes.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/routes/app.routes.js~exports",
+    "access": "public",
+    "export": false,
+    "importPath": "code-challenge/source/routes/app.routes.js",
+    "importStyle": null,
+    "description": "Defines some routes",
+    "lineNumber": 6,
+    "params": [
+      {
+        "name": "app",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "miner",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "kind": "index",
+    "content": "[![Build Status](https://travis-ci.com/BirgitPohl/zkSystemsCodeChallenge.svg?token=Sx1MyNZceLadtejm4hR1&branch=master)](https://travis-ci.com/BirgitPohl/zkSystemsCodeChallenge)\n[![codecov](https://codecov.io/gh/BirgitPohl/zkSystemsCodeChallenge/branch/master/graph/badge.svg?token=fHKv8yGlKW)](https://codecov.io/gh/BirgitPohl/zkSystemsCodeChallenge)\n\n\n# Code Challange: Blockchain\n\nCheck out your wallet and mine minacoins.\n\n## Setup\nRun `npm install` inside the Blockchain-JS folder.\n\n## Build\nRun `npm run build` to build.\n\n## Start\nRun `npm run start` to start.\n\n## Test\nRun `npm run test` to test.\nRun `npm run test:coverage` to test with coverage.\n\n## Docker\nRun `./start.sh` to start a docker container.\n\nYou need to have Docker installed and running.",
+    "longname": "/Users/birgitpohl1/Documents/ZKsystems/zkSystemsCodeChallenge/README.md",
+    "name": "../README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"code-challenge\",\n  \"version\": \"0.0.1\",\n  \"description\": \" coding challenge\",\n  \"main\": \"server.js\",\n  \"scripts\": {\n    \"build\": \"babel source --out-dir lib --source-maps inline --copy-files\",\n    \"test\": \"grunt && jest\",\n    \"test:coverage\": \"jest --ci --reporters=default --coverage\",\n    \"start\": \"nodemon babel-node server.js \",\n    \"esdoc\": \"node ./node_modules/.bin/esdoc\"\n  },\n  \"keywords\": [\n    \"blockchain\"\n  ],\n  \"author\": \"zksystems\",\n  \"license\": \"ISC\",\n  \"dependencies\": {\n    \"crypto-js\": \"^3.1.9-1\",\n    \"ejs\": \"^2.6.2\",\n    \"elliptic\": \"^6.5.0\",\n    \"express\": \"^4.17.1\",\n    \"express-ejs-layouts\": \"^2.5.0\",\n    \"pdfmake\": \"^0.1.58\"\n  },\n  \"devDependencies\": {\n    \"@babel/cli\": \"^7.5.5\",\n    \"@babel/core\": \"^7.5.5\",\n    \"@babel/node\": \"^7.5.5\",\n    \"@babel/preset-env\": \"^7.5.5\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"eslint\": \"^6.2.0\",\n    \"grunt\": \"^1.0.4\",\n    \"grunt-eslint\": \"^22.0.0\",\n    \"jest\": \"^24.9.0\",\n    \"load-grunt-tasks\": \"^5.1.0\",\n    \"nodemon\": \"^1.19.1\",\n    \"supertest\": \"^4.0.2\"\n  },\n  \"babel\": {\n    \"presets\": [\n      [\n        \"@babel/preset-env\",\n        {\n          \"targets\": {\n            \"esmodules\": true\n          }\n        }]\n    ]}\n}\n",
+    "longname": "/Users/birgitpohl1/Documents/ZKsystems/zkSystemsCodeChallenge/blockchain-JS/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manualIndex",
+    "content": "[![Build Status](https://travis-ci.com/BirgitPohl/zkSystemsCodeChallenge.svg?token=Sx1MyNZceLadtejm4hR1&branch=master)](https://travis-ci.com/BirgitPohl/zkSystemsCodeChallenge)\n[![codecov](https://codecov.io/gh/BirgitPohl/zkSystemsCodeChallenge/branch/master/graph/badge.svg?token=fHKv8yGlKW)](https://codecov.io/gh/BirgitPohl/zkSystemsCodeChallenge)\n\n\n# Code Challange: Blockchain\n\nCheck out your wallet and mine minacoins.\n\n## Setup\nRun `npm install` inside the Blockchain-JS folder.\n\n## Build\nRun `npm run build` to build.\n\n## Start\nRun `npm run start` to start.\n\n## Test\nRun `npm run test` to test.\nRun `npm run test:coverage` to test with coverage.\n\n## Docker\nRun `./start.sh` to start a docker container.\n\nYou need to have Docker installed and running.",
+    "longname": "/Users/birgitpohl1/Documents/ZKsystems/zkSystemsCodeChallenge/README.md",
+    "name": "../README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/Users/birgitpohl1/Documents/ZKsystems/zkSystemsCodeChallenge/blockchain-JS/manual.md",
+    "name": "./manual.md",
+    "content": "",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "__docId__": 120,
+    "kind": "testFile",
+    "name": "tests/app.spec.js",
+    "content": "const request = require('supertest');\nlet app = require('../app');\ndescribe('GET /', function () {\n it('should return 200', function (done) {\n   request(app)\n     .get('/')\n     .expect(200, done)\n });\n});\n\ndescribe('GET /data', function () {\n  it('should return 200', function (done) {\n    request(app)\n      .get('/data')\n      .expect(200, done)\n  });\n });\n",
+    "static": true,
+    "longname": "/Users/birgitpohl1/Documents/ZKsystems/zkSystemsCodeChallenge/blockchain-JS/tests/app.spec.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 121,
+    "kind": "test",
+    "name": "describe0",
+    "testId": 0,
+    "memberof": "tests/app.spec.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "tests/app.spec.js~describe0",
+    "access": null,
+    "description": "GET /",
+    "lineNumber": 3
+  },
+  {
+    "__docId__": 122,
+    "kind": "test",
+    "name": "it1",
+    "testId": 1,
+    "memberof": "tests/app.spec.js~describe0",
+    "testDepth": 1,
+    "static": true,
+    "longname": "tests/app.spec.js~describe0.it1",
+    "access": null,
+    "description": "should return 200",
+    "lineNumber": 4
+  },
+  {
+    "__docId__": 123,
+    "kind": "test",
+    "name": "describe2",
+    "testId": 2,
+    "memberof": "tests/app.spec.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "tests/app.spec.js~describe2",
+    "access": null,
+    "description": "GET /data",
+    "lineNumber": 11
+  },
+  {
+    "__docId__": 124,
+    "kind": "test",
+    "name": "it3",
+    "testId": 3,
+    "memberof": "tests/app.spec.js~describe2",
+    "testDepth": 1,
+    "static": true,
+    "longname": "tests/app.spec.js~describe2.it3",
+    "access": null,
+    "description": "should return 200",
+    "lineNumber": 12
+  }
+]
