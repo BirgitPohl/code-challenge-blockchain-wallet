@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/BirgitPohl/zkSystemsCodeChallenge.svg?token=Sx1MyNZceLadtejm4hR1&branch=master)](https://travis-ci.com/BirgitPohl/zkSystemsCodeChallenge)
+
 # Code Challange: Blockchain
 
 Check out your wallet and mine minacoins.

@@ -6,3 +6,4 @@ script:
   - cd blockchain-JS
   - echo Run Tests
   - npm run test:coverage
+  - codecov
