@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.com/BirgitPohl/zkSystemsCodeChallenge.svg?token=Sx1MyNZceLadtejm4hR1&branch=master)](https://travis-ci.com/BirgitPohl/zkSystemsCodeChallenge)
+[![codecov](https://codecov.io/gh/BirgitPohl/zkSystemsCodeChallenge/branch/master/graph/badge.svg?token=fHKv8yGlKW)](https://codecov.io/gh/BirgitPohl/zkSystemsCodeChallenge)
+
 
 # Code Challange: Blockchain
 
